@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fly2the.world – Die Schätze Äthiopiens</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    header.hero {
+      background: url('images/landschaft.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    header.hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f8f9fa;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .about img {
+      border-radius: 12px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li><img src="images/logo.png" alt="fly2the.world Logo" style="height:40px;"></li>
+    </ul>
+    <ul>
+      <li><a href="#produkte">Produkte</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#kontakt" role="button">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Die Schätze Äthiopiens</h1>
+    <p>Frisch · Veredelt · Pünktlich nach Ihren Wünschen</p>
+  </header>
+
+  <!-- Produkte -->
+  <main class="container" id="produkte">
+    <h2>Unser Sortiment</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/regenbogen.jpg" alt="Tropische Früchte">
+        <h3>Tropische Früchte</h3>
+        <p>Mango, Avocado, Papaya, Ananas, Passionsfrucht, Granatapfel u. v. m.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/sonnenaufgang.jpg" alt="Fleischspezialitäten">
+        <h3>Premium-Fleisch</h3>
+        <p>Rind, Lamm, Ziege sowie exklusive Spezialitäten wie Krokodilfleisch.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/flussvoegel.jpg" alt="Frischer Fisch">
+        <h3>Frischer Fisch</h3>
+        <p>Nachhaltig gefangen in den klaren Gewässern des Rift Valley.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/kaffee.jpg" alt="Äthiopischer Kaffee">
+        <h3>Kaffee</h3>
+        <p>Sidamo, Yirgacheffe, Harrar – als Rohbohne oder geröstet.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <main class="container" id="services">
+    <h2>Unsere Services</h2>
+    <p>In Addis Abeba entsteht ein modernes Logistik- und Verarbeitungszentrum mit:</p>
+    <ul>
+      <li>Exakt planbaren Lieferzeiten</li>
+      <li>Individueller Verarbeitung nach Ihren Wünschen</li>
+      <li>Trocknung von Früchten für Premium-Produkte</li>
+      <li>Portionierung von Fleisch</li>
+      <li>Verpackung & Etikettierung in Ihrem Design</li>
+    </ul>
+  </main>
+
+  <!-- Über uns -->
+  <main class="container about" id="about">
+    <h2>Über uns</h2>
+    <div class="grid">
+      <div>
+        <p>fly2the.world verbindet die Schätze Äthiopiens mit dem globalen Markt.  
+        Mit Leidenschaft für Qualität, Nachhaltigkeit und Zuverlässigkeit bringen wir Produkte, die nicht nur Genuss, sondern auch Geschichten transportieren.</p>
+      </div>
+      <div>
+        <img src="images/paarfoto.jpg" alt="Gründer von fly2the.world">
+      </div>
+    </div>
+  </main>
+
+  <!-- Kontakt -->
+  <section id="kontakt" aria-label="Kontakt">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Kontakt aufnehmen</h2>
+          <h3>Wir freuen uns auf Ihre Anfrage</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="name" name="name" placeholder="Ihr Name" required />
+          <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required />
+          <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" rows="4" required></textarea>
+          <button type="submit" onclick="event.preventDefault()">Senden</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="#">Impressum</a> • 
+      <a href="#">Datenschutz</a>
+    </small>
+  </footer>
+
+</body>
+</html>
