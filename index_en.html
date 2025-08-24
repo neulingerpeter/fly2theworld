@@ -1,60 +1,125 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>fly2the.world – Fresh from Ethiopia</title>
-  <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; color: #222; line-height: 1.6; }
-    header { background: url('895C5A74-65EE-4557-8A81-D0B816248A4E.png') no-repeat center center/cover; height: 100vh; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; padding: 0 20px; }
-    header h1 { font-size: 3rem; margin-bottom: 0.5em; }
-    header p { font-size: 1.5rem; max-width: 700px; margin: 0 auto 1em; }
-    .cta { background: white; color: #222; display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 1em; }
-    section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
-    section h2 { color: #00756c; font-size: 2rem; margin-bottom: 1em; }
-    footer { background: #00756c; color: white; text-align: center; padding: 30px 20px; }
-    footer a { color: #e0f7f4; text-decoration: none; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>fly2the.world – Fresh from Ethiopia, fair & reliable</title>
+  <meta name="description" content="Tropical products from Ethiopia — fresh, refined, with reliable air-cargo logistics. Direct, fair, transparent." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<div style="position: fixed; top: 20px; right: 20px; z-index: 999;">
-  <select onchange="location = this.value;">
-    <option value="index_de.html">🇩🇪 Deutsch</option>
-    <option value="index_en.html">🇬🇧 English</option>
-    <option value="index_fr.html">🇫🇷 Français</option>
-    <option value="index_it.html">🇮🇹 Italiano</option>
-    <option value="index_es.html">🇪🇸 Español</option>
-  </select>
-</div>
+  <header class="site-header">
+    <div class="brand">
+      <svg aria-hidden="true" viewBox="0 0 100 100" class="logo">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#14b8a6"/>
+            <stop offset="1" stop-color="#0f766e"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="48" fill="url(#g)"/>
+        <path d="M18 54c18-8 32-8 64-2-12 10-24 18-38 22-12 4-18 2-26-4 6-4 10-10 0-16z" fill="white" fill-opacity=".9"/>
+      </svg>
+      <span class="brand-text">fly2the.world</span>
+    </div>
 
-
-  <header>
-    <h1>fly2the.world</h1>
-    <p>From the heart of Africa into your hands – Fresh. Refined. Delivered worldwide.</p>
-    <a href="#produkte" class="cta">Explore Products</a>
+    <nav class="actions">
+      <a href="#produkte">Products</a>
+      <a href="#logistik">Logistics</a>
+      <a href="#kontakt" class="btn">Contact</a>
+      <label class="lang">
+        <span aria-hidden="true">🌐</span>
+        <select id="lang" aria-label="Choose language">
+          <option value="index.html">Deutsch</option>
+          <option value="index_en.html" selected>English</option>
+        </select>
+      </label>
+    </nav>
   </header>
 
-  <section id="produkte">
-    <h2>Our Products</h2>
-    <p>We supply tropical fruits, coffee, meat, fish, vegetables, spices, and cocoa – fresh or processed, exactly as needed.</p>
-  </section>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Fresh at the source. <span class="accent">Fair. Reliable.</span></h1>
+        <p>We deliver fruit, coffee, spices & fish from Ethiopia straight to you — refined to spec and shipped reliably by air cargo.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#kontakt">Request quote</a>
+          <a class="btn ghost" href="#produkte">Explore products</a>
+        </div>
+        <div class="trust">
+          <span>✔ Direct origin</span>
+          <span>✔ Processing in Addis Ababa</span>
+          <span>✔ Reliable delivery windows</span>
+        </div>
+      </div>
+    </section>
 
-  <section id="verarbeitung">
-    <h2>Processing & Logistics</h2>
-    <p>Our Addis Ababa hub provides drying, labeling, packaging & precisely timed air cargo deliveries.</p>
-  </section>
+    <section id="produkte" class="section">
+      <h2>Products</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fruits</h3>
+          <p>Mango, avocado, pineapple, papaya, passion fruit — fresh or dried.</p>
+        </article>
+        <article class="card">
+          <h3>Coffee & Cocoa</h3>
+          <p>Single-origin, green or roasted, packaged on request.</p>
+        </article>
+        <article class="card">
+          <h3>Fish & Meat</h3>
+          <p>Tilapia & beef — chilled, frozen or refined, by lot.</p>
+        </article>
+        <article class="card">
+          <h3>Vegetables & Spices</h3>
+          <p>Premium blends like Berbere & Shiro — pure & traceable.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="kontakt">
-    <h2>Contact</h2>
-    <p>Write to us at we@fly2the.world or call: +49 152 5657 1968.</p>
-  </section>
+    <section id="logistik" class="section alt">
+      <h2>Processing & Logistics</h2>
+      <ul class="features">
+        <li><strong>Addis Ababa hub:</strong> drying, labeling, packaging.</li>
+        <li><strong>Air cargo:</strong> fixed slots, customs & cold chain managed.</li>
+        <li><strong>Quality:</strong> lot tracking & customer specifications.</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>© 2025 fly2the.world – Fresh from Origin. Tailored to You.</p>
-    <p><a href="mailto:we@fly2the.world">we@fly2the.world</a></p>
+    <section id="kontakt" class="section contact">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:we@fly2the.world">we@fly2the.world</a> or call: <a href="tel:+4915256571968">+49 152 5657 1968</a>.</p>
+      <form action="mailto:we@fly2the.world" method="post" enctype="text/plain">
+        <div class="row">
+          <label>Your name
+            <input required name="name" autocomplete="name" />
+          </label>
+          <label>Email
+            <input required type="email" name="email" autocomplete="email" />
+          </label>
+        </div>
+        <label>Message
+          <textarea required name="message" rows="5" placeholder="Your specs or inquiry…"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> fly2the.world – Direct. Fair. Reliable.</p>
   </footer>
 
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lang').addEventListener('change', (e) => {
+      location.href = e.target.value;
+    });
+  </script>
 </body>
 </html>

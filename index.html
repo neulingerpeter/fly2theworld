@@ -1,146 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>fly2the.world – Die Schätze Äthiopiens</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <style>
-    header.hero {
-      background: url('images/landschaft.jpg') center/cover no-repeat;
-      color: white;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-    header.hero h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    header.hero p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .product-card {
-      padding: 1rem;
-      border-radius: 8px;
-      background: #f8f9fa;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    .about img {
-      border-radius: 12px;
-      max-width: 100%;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>fly2the.world – Frisch aus Äthiopien, fair & planbar</title>
+  <meta name="description" content="Tropische Produkte aus Äthiopien – frisch, veredelt, mit planbarer Air-Cargo-Logistik. Direkt, fair, transparent." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
 
-  <!-- Navigation -->
-  <nav class="container-fluid">
-    <ul>
-      <li><img src="images/logo.png" alt="fly2the.world Logo" style="height:40px;"></li>
-    </ul>
-    <ul>
-      <li><a href="#produkte">Produkte</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">Über uns</a></li>
-      <li><a href="#kontakt" role="button">Kontakt</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <div class="brand">
+      <svg aria-hidden="true" viewBox="0 0 100 100" class="logo">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#14b8a6"/>
+            <stop offset="1" stop-color="#0f766e"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="48" fill="url(#g)"/>
+        <path d="M18 54c18-8 32-8 64-2-12 10-24 18-38 22-12 4-18 2-26-4 6-4 10-10 0-16z" fill="white" fill-opacity=".9"/>
+      </svg>
+      <span class="brand-text">fly2the.world</span>
+    </div>
 
-  <!-- Hero -->
-  <header class="hero">
-    <h1>Die Schätze Äthiopiens</h1>
-    <p>Frisch · Veredelt · Pünktlich nach Ihren Wünschen</p>
+    <nav class="actions">
+      <a href="#produkte">Produkte</a>
+      <a href="#logistik">Logistik</a>
+      <a href="#kontakt" class="btn">Kontakt</a>
+      <label class="lang">
+        <span aria-hidden="true">🌐</span>
+        <select id="lang" aria-label="Sprache wählen">
+          <option value="index.html" selected>Deutsch</option>
+          <option value="index_en.html">English</option>
+        </select>
+      </label>
+    </nav>
   </header>
 
-  <!-- Produkte -->
-  <main class="container" id="produkte">
-    <h2>Unser Sortiment</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="images/regenbogen.jpg" alt="Tropische Früchte">
-        <h3>Tropische Früchte</h3>
-        <p>Mango, Avocado, Papaya, Ananas, Passionsfrucht, Granatapfel u. v. m.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Frisch vom Ursprung. <span class="accent">Fair. Planbar.</span></h1>
+        <p>Wir bringen Früchte, Kaffee, Gewürze & Fisch aus Äthiopien direkt zu Ihnen – veredelt nach Spezifikation und zuverlässig per Air-Cargo.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#kontakt">Anfragen</a>
+          <a class="btn ghost" href="#produkte">Produkte entdecken</a>
+        </div>
+        <div class="trust">
+          <span>✔ Direkte Herkunft</span>
+          <span>✔ Verarbeitung in Addis Abeba</span>
+          <span>✔ Planbare Lieferfenster</span>
+        </div>
       </div>
-      <div class="product-card">
-        <img src="images/sonnenaufgang.jpg" alt="Fleischspezialitäten">
-        <h3>Premium-Fleisch</h3>
-        <p>Rind, Lamm, Ziege sowie exklusive Spezialitäten wie Krokodilfleisch.</p>
+    </section>
+
+    <section id="produkte" class="section">
+      <h2>Produkte</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Früchte</h3>
+          <p>Mango, Avocado, Ananas, Papaya, Passionsfrucht – frisch oder getrocknet.</p>
+        </article>
+        <article class="card">
+          <h3>Kaffee & Kakao</h3>
+          <p>Single-Origin, Rohbohne oder geröstet, auf Wunsch direkt verpackt.</p>
+        </article>
+        <article class="card">
+          <h3>Fisch & Fleisch</h3>
+          <p>Tilapia & Rind – gekühlt, tiefgekühlt oder veredelt, chargengenau.</p>
+        </article>
+        <article class="card">
+          <h3>Gemüse & Gewürze</h3>
+          <p>Hochwertige Gewürze wie Berbere & Shiro – sortenrein & rückverfolgbar.</p>
+        </article>
       </div>
-      <div class="product-card">
-        <img src="images/flussvoegel.jpg" alt="Frischer Fisch">
-        <h3>Frischer Fisch</h3>
-        <p>Nachhaltig gefangen in den klaren Gewässern des Rift Valley.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/kaffee.jpg" alt="Äthiopischer Kaffee">
-        <h3>Kaffee</h3>
-        <p>Sidamo, Yirgacheffe, Harrar – als Rohbohne oder geröstet.</p>
-      </div>
-    </div>
+    </section>
+
+    <section id="logistik" class="section alt">
+      <h2>Verarbeitung & Logistik</h2>
+      <ul class="features">
+        <li><strong>Addis Abeba Hub:</strong> Trocknung, Etikettierung, Verpackung.</li>
+        <li><strong>Air-Cargo:</strong> feste Slots, Zollpapiere & Kühlkette organisiert.</li>
+        <li><strong>Qualität:</strong> Chargenverfolgung & Spezifikationen pro Kunde.</li>
+      </ul>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <h2>Kontakt</h2>
+      <p>Schreiben Sie uns an <a href="mailto:we@fly2the.world">we@fly2the.world</a> oder rufen Sie an: <a href="tel:+4915256571968">+49 152 5657 1968</a>.</p>
+      <form action="mailto:we@fly2the.world" method="post" enctype="text/plain">
+        <div class="row">
+          <label>Ihr Name
+            <input required name="name" autocomplete="name" />
+          </label>
+          <label>E-Mail
+            <input required type="email" name="email" autocomplete="email" />
+          </label>
+        </div>
+        <label>Nachricht
+          <textarea required name="message" rows="5" placeholder="Ihre Spezifikation oder Anfrage…"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Senden</button>
+      </form>
+    </section>
   </main>
 
-  <!-- Services -->
-  <main class="container" id="services">
-    <h2>Unsere Services</h2>
-    <p>In Addis Abeba entsteht ein modernes Logistik- und Verarbeitungszentrum mit:</p>
-    <ul>
-      <li>Exakt planbaren Lieferzeiten</li>
-      <li>Individueller Verarbeitung nach Ihren Wünschen</li>
-      <li>Trocknung von Früchten für Premium-Produkte</li>
-      <li>Portionierung von Fleisch</li>
-      <li>Verpackung & Etikettierung in Ihrem Design</li>
-    </ul>
-  </main>
-
-  <!-- Über uns -->
-  <main class="container about" id="about">
-    <h2>Über uns</h2>
-    <div class="grid">
-      <div>
-        <p>fly2the.world verbindet die Schätze Äthiopiens mit dem globalen Markt.  
-        Mit Leidenschaft für Qualität, Nachhaltigkeit und Zuverlässigkeit bringen wir Produkte, die nicht nur Genuss, sondern auch Geschichten transportieren.</p>
-      </div>
-      <div>
-        <img src="images/paarfoto.jpg" alt="Gründer von fly2the.world">
-      </div>
-    </div>
-  </main>
-
-  <!-- Kontakt -->
-  <section id="kontakt" aria-label="Kontakt">
-    <div class="container">
-      <article>
-        <hgroup>
-          <h2>Kontakt aufnehmen</h2>
-          <h3>Wir freuen uns auf Ihre Anfrage</h3>
-        </hgroup>
-        <form class="grid">
-          <input type="text" id="name" name="name" placeholder="Ihr Name" required />
-          <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required />
-          <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" rows="4" required></textarea>
-          <button type="submit" onclick="event.preventDefault()">Senden</button>
-        </form>
-      </article>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="container">
-    <small>
-      <a href="#">Impressum</a> • 
-      <a href="#">Datenschutz</a>
-    </small>
+  <footer class="site-footer">
+    <p>© <span id="y"></span> fly2the.world – Direkt. Fair. Planbar.</p>
   </footer>
 
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lang').addEventListener('change', (e) => {
+      location.href = e.target.value;
+    });
+  </script>
 </body>
 </html>
